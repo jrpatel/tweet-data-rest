@@ -13,7 +13,7 @@ public class Response {
 	private OptionalDouble avgMax;
 	private OptionalDouble avgMin;
 	
-	Response(){
+	public Response(){
 		
 	}
 
