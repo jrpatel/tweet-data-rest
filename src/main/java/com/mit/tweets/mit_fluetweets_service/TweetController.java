@@ -8,6 +8,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,16 +16,17 @@ import org.springframework.web.client.RestTemplate;
 
 import com.sun.javafx.collections.MappingChange.Map;
 @RestController
+
 public class TweetController {
 	
-	//RestTemplate restTemplate = new RestTemplate();
-	ResponseGenerator service;
+	@Autowired
+	TweetService service;
 	
-	TweetController(ResponseGenerator service){
+	/*TweetController(ResponseGenerator service){
 		
 		this.service = service;
 		
-	}
+	}*/
 	
 	
 	@RequestMapping("/tweets")
