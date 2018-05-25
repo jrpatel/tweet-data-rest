@@ -1,4 +1,4 @@
-package com.mit.tweets.mit_fluetweets_service;
+package com.mit.tweets.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

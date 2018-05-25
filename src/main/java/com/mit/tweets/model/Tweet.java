@@ -1,6 +1,6 @@
-package com.mit.tweets.mit_fluetweets_service;
+package com.mit.tweets.model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import java.util.Date;
+
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Tweet {
@@ -10,7 +10,7 @@ public class Tweet {
 	private String latitude;
 	private String longitude;
 	private String tweet_date;
-	private String aggravation;
+	private int aggravation;
 	//private String avgMax;
 	//private String avgMin;
 	
@@ -48,24 +48,13 @@ public class Tweet {
 	public void setTweet_date(String tweet_date) {
 		this.tweet_date = tweet_date;
 	}
-	public String getAggravation() {
+	public int getAggravation() {
 		return aggravation;
 	}
-	public void setAggravation(String aggravation) {
+	public void setAggravation(int aggravation) {
 		this.aggravation = aggravation;
 	}
-	/*public String getAvgMax() {
-		return avgMax;
-	}
-	public void setAvgMax(String avgMax) {
-		this.avgMax = avgMax;
-	}
-	public String getAvgMin() {
-		return avgMin;
-	}
-	public void setAvgMin(String avgMin) {
-		this.avgMin = avgMin;
-	} */
+	
 	
 	@Override
 	public String toString() {

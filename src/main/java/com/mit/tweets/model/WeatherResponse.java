@@ -1,13 +1,12 @@
-package com.mit.tweets.mit_fluetweets_service;
+package com.mit.tweets.model;
 
-import java.util.Arrays;
+
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class WeatherResponse {
-	
 	
 	private List<Consolitaded_Weather> consolidated_weather;
 	

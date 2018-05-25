@@ -1,4 +1,4 @@
-package com.mit.tweets.mit_fluetweets_service;
+package com.mit.tweets.model;
 
 import java.util.OptionalDouble;
 
@@ -9,7 +9,7 @@ public class Response {
 	private String latitude;
 	private String longitude;
 	private String tweet_date;
-	private String aggravation;
+	private int aggravation;
 	private OptionalDouble avgMax;
 	private OptionalDouble avgMin;
 	
@@ -57,11 +57,11 @@ public class Response {
 		this.tweet_date = tweet_date;
 	}
 
-	public String getAggravation() {
+	public int getAggravation() {
 		return aggravation;
 	}
 
-	public void setAggravation(String aggravation) {
+	public void setAggravation(int aggravation) {
 		this.aggravation = aggravation;
 	}
 
