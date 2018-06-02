@@ -1,6 +1,10 @@
 package com.mit.tweets.model;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+/**
+ * this class will be used to deserializing Weather 
+ * response.
+ */
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Consolitaded_Weather {

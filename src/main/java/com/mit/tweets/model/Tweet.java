@@ -1,6 +1,12 @@
 package com.mit.tweets.model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+/**
+ * @author jinal
+ * this POJO class will be used to deserializing response from
+ * "http://api.flutrack.org/?s=feverORflue&&limit=10"
+ *  
+ */
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Tweet {

@@ -1,7 +1,8 @@
 package com.mit.tweets.model;
 
-import java.util.OptionalDouble;
-
+/**
+ * POJO class to generate Response.
+ */
 public class Response {
 	
 	private String user_name;
@@ -10,8 +11,8 @@ public class Response {
 	private String longitude;
 	private String tweet_date;
 	private int aggravation;
-	private OptionalDouble avgMax;
-	private OptionalDouble avgMin;
+	private Double avgMax;
+	private Double avgMin;
 	
 	public Response(){
 		
@@ -65,19 +66,19 @@ public class Response {
 		this.aggravation = aggravation;
 	}
 
-	public OptionalDouble getAvgMax() {
+	public Double getAvgMax() {
 		return avgMax;
 	}
 
-	public void setAvgMax(OptionalDouble avgMax) {
+	public void setAvgMax(Double avgMax) {
 		this.avgMax = avgMax;
 	}
 
-	public OptionalDouble getAvgMin() {
+	public Double getAvgMin() {
 		return avgMin;
 	}
 
-	public void setAvgMin(OptionalDouble avgMin) {
+	public void setAvgMin(Double avgMin) {
 		this.avgMin = avgMin;
 	}
 	@Override

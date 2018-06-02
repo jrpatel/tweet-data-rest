@@ -1,7 +1,10 @@
 package com.mit.tweets.model;
-
-
 import java.util.List;
+
+/**
+ * this class will be used to deserializing Weather 
+ * response from "https://www.metaweather.com/api/location/"
+ */
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

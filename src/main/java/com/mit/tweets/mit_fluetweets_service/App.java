@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Hello world!
+ * starting point of application. 
  *
  */
 @SpringBootApplication(scanBasePackages = {"com.mit.tweets.controlller","com.mit.tweets.service","com.mit.tweets.exception"})
